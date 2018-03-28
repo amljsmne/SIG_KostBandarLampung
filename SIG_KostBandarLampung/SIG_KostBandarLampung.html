@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>SIG Kost Kota Bandar Lampung</title>
+        <style>
+            #map {
+                background-color: gray;
+                width: 100%;
+                height: 600px;
+            }
+        </style>
+    </head>
+    <center>
+    <h1><font color= "white">SIG Kost Kota Bandar Lampung</h1>
+    1617051033 - 1617051021 - 1657051017</font>
+    </center>
+    <body bgcolor=#008080>
+        <div id="map"></div>
+    </body>
+    <script>
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 13,
+    center: {lat: -5.39515288, lng: 105.26707838}
+  });
+  var infoWin = new google.maps.InfoWindow();
+  // Add some markers to the map.
+  // Note: The code uses the JavaScript Array.prototype.map() method to
+  // create an array of markers based on a given "locations" array.
+  // The map() method here has nothing to do with the Google Maps API.
+  var markers = locations.map(function(location, i) {
+    var marker = new google.maps.Marker({
+      position: location
+    });
+    google.maps.event.addListener(marker, 'click', function(evt) {
+      infoWin.setContent(location.info);
+      infoWin.open(map, marker);
+    })
+    return marker;
+  });
+
+  // Add a marker clusterer to manage the markers.
+  var markerCluster = new MarkerClusterer(map, markers, {
+    imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+  });
+
+}
+var locations = [
+  //Kost sekitar Universitas Lampung
+        {lat: -5.371406, lng: 105.241165, info: "Kost Setia (Putra)"},
+        {lat: -5.3604276, lng: 105.2458714, info: "Kost Dira Tiara (Putri)"},
+        {lat: -5.3766118, lng: 105.2548619, info:"Kost Lucky (Putra)" },
+        {lat: -5.372856, lng: 105.238806, info:"Kost Putria (Putri)"},
+        {lat: -5.373731, lng: 105.23842,info:"Kost Apel (Putri)"},
+  //Kost sekitar UIN Raden Intan Lampung
+        {lat: -5.3758787, lng: 105.3037493,info:"Kost Aisyah (Putri)"},
+        {lat: -5.3755487, lng: 105.3029838, info:"Kost Sari (Putri)"},
+        {lat: -5.3903946, lng: 105.2949982, info:"Kost Putri Alysha (Putri)"},
+        {lat: -5.3836927, lng: 105.2557306, info:"Kost Pondok Pelangi 1 (Putra)"},
+        {lat: -5.4169223, lng: 105.2716485, info:"Kost Sarajevo Real (Putra)"},
+  //Kost sekitar ITERA
+        {lat: -5.3668213, lng: 105.2768128, info:"Kost Pondok Tiara (Putri)"},
+        {lat: -5.3567477, lng: 105.3053743, info:"Kost Yonansa (Putra)"},
+        {lat: -5.3790947, lng: 105.3182258, info:"Kost Hostel (Putra)"},
+        {lat: -5.3853989, lng: 105.295467, info:"Kost Pria Rajopingka (Putra)"},
+        {lat: -5.389734 , lng: 105.2789073, info:"Kost Bang John (Putra)"},
+  //Kost sekitar UBL
+        {lat: -5.4080059, lng: 105.2865742, info:"Kost Arifa (Putra)"},
+        {lat: -5.407826 , lng: 105.2885089, info:"Kost Sari (Putri)"},
+        {lat: -5.3990458, lng: 105.2122265, info:"Kost Griya Hostapel (Putra)"},
+        {lat: -5.376494, lng: 105.247935, info:"Kost 45 (Putra)"},
+        {lat: -5.375163, lng: -5.375163, info:"Kost Karin (Putra)"},
+  //Kost sekitar Universitas Saburai
+        {lat: -5.3827567, lng: 105.2248812, info:"Kost Anugrah (Putra)"},
+        {lat: -5.3887357, lng: 105.2163296, info:"Kost Avicena (Putri)"},
+        {lat: -5.381508 , lng: 105.250032, info:"Kost Naufal (Putra)" },
+        {lat: -5.3830324, lng: 105.2497272, info:"Kost Madukoro (Putra)"},
+        {lat: -5.3708349 ,lng: 105.22918, info:"Kost Tapis (Putri)" } 
+       ];
+
+google.maps.event.addDomListener(window, "load", initMap);
+   </script>
+<script async defer 
+src="https://maps.googleapis.com/maps/api/js?key= AIzaSyADYKfmAYScli5xJj_4uWTcPJR5x9okxOo &callback=initMap"></script>
+<script src="src/markerclusterer.js">
+</script>
+</html>
