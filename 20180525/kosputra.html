@@ -1,0 +1,120 @@
+<html>
+        <link rel="stylesheet" type="text/css" href="menu.css"></link>
+        <link rel="stylesheet" type="text/css" href="popup.css"></link>
+    <head>
+        <title>SIG Kostan Kota Bandar Lampung</title>
+        <style>
+            #map {
+                background-color: gray;
+                width: 100%;
+                height: 400px;
+            }
+            .footer {
+                width:auto;
+                height: 10px;
+                background-color:darkcyan;
+                color:white;
+                padding:20px;
+      }
+        </style>
+    </head>
+    <center>
+        <div class="header"> <img src= sikos.png height= "70" width= "70"> </div>
+        <h1><font  color= "darkcyan">SIG Kost Putra</h1></font>
+    </center>
+    <body bgcolor=#008B8B>
+            <div class="header">
+                <div class="header">
+                    <div class= "sidebar">
+                    <a class="active" href="SIG_KostBandarLampung.html">BERANDA</a>
+                    <div class="s1">
+                    <button class="btn1">PILIHAN KOST</button>
+                    <div class="sidebar3">
+                    <a href="kosputra.html" target='blank'>KOST PUTRA</a>
+                    <a href="kosputri.html" target='blank' >KOST PUTRI</a>
+                </div></div>
+                    <div class="s2">
+                    <button class="btn2">POLYGON</button>
+                    <div class="sidebar4">
+                        <a href="polygonjson.html" target='blank' >KOST SEKITAR UNILA</a>
+                        <a href="polygonjson2.html" target='blank' >KOST SEKITAR MALAHAYATI</a>
+                        <a href="polygonjson3.html" target='blank' >KOST SEKITAR TEKNOKRAT</a>
+                         </div></div>
+                    <div class="s3">
+                        <button class="btn3">RENTANG HARGA KOST</button>
+                        <div class="sidebar5">
+                        <a href="3-5.html" target='blank' >3 - 5 JUTA</a>
+                        <a href="6-8.html" target='blank' >6 - 8 JUTA</a>
+                        <a href="9.html" target='blank' > >9  JUTA</a>
+                        </div></div>
+                        <a class="active" href="direction.html">PETUNJUK LOKASI</a>
+                        <a class="active" href="kontak.html">KONTAK</a>
+                        <a class="active" href="help.html">BANTUAN</a>
+                        <a class="active" href="tentang.html">TENTANG</a>
+                        <a class="active" href="login.php">KELUAR</a>
+                     </div></div>
+                     </div></div>
+            <div id="map"></div>
+            <div class="footer"> <center>Copyright &copy; 2018. All rights reserved. Designed and developed by Designed by Amelia Jasmine, Intan Dinasti, Dian Pitaloka</center></div>
+    </body>
+    <script>
+function initMap() {
+  var lampung = {lat: -4.558585, lng: 105.406808};
+            var map=new google.maps.Map(document.getElementById('map'),{zoom:8,center:lampung});
+            console.log(map);
+            var infowindow = new google.maps.InfoWindow();
+            var contentString = '<h1>PROVINSI LAMPUNG</h1><hr>'+
+                                 '<h5> Memiliki 15 Kabupaten/Kota </hr5>';
+            infowindow.setContent(contentString);
+   
+   var marker=new google.maps.Marker({position:lampung,map:map});
+            marker.addListener('click',function(){
+                infowindow.open(map,marker);
+            });
+  var infoWin = new google.maps.InfoWindow();
+  var labels = 'Bandar Lampung';
+
+  var markers = locations.map(function(location, i) {
+    var marker = new google.maps.Marker({
+      position: location
+    });
+    google.maps.event.addListener(marker, 'click', function(evt) {
+      infoWin.setContent(location.info);
+      infoWin.open(map, marker);
+    })
+    return marker;
+  });
+  // Add a marker clusterer to manage the markers.
+  var markerCluster = new MarkerClusterer(map, markers, {
+    imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+  });
+
+}
+var locations = [
+    //Kost sekitar Universitas Lampung
+    {lat: -5.365230, lng:  105.250078,info:"<h2>WISMA RAHMAYANI (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia=  KAMAR PENUH  </h3><hr>"+ "No. Hp: 0891564526273 <hr>"+" Rp.3.350.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra1.jpg height= 100% width= 100%> </div> </div>"},
+    {lat: -5.3622294, lng: 105.2380615, info: "<h2>ASRAMA PERWIRA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 3 Kamar  </h3><hr>"+ "No. Hp: 089367382523 <hr>"+" Rp.6.350.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra2.jpg height= 100% width= 100%> </div> </div>"},
+    {lat: -5.3682831, lng: 105.2389196, info:"<h2>MYQIA HOUSE  (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 4 Kamar  </h3><hr>"+ "No. Hp: 0812367063111 <hr>"+" Rp.7.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra3.jpg height= 100% width= 100%> </div> </div>"},
+    {lat: -5.3646867, lng: 105.254068, info:"<h2>SUROPATI GOLDEN GREEN (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 0812345673111 <hr>"+" Rp.8.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra8.jpg height= 100% width= 100%> </div> </div>"},
+        
+    //Kost sekitar Malahayati
+    {lat: -5.3827567, lng: 105.2248812, info: "<h2>KOST RAISYA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 6 Kamar  </h3><hr>"+ "No. Hp: 089714263766 <hr>"+" Rp.4.200.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra4.jpg height= 100% width= 100%> </div> </div>"},
+    {lat: -5.3749128, lng: 105.2267923, info: "<h2>KOST RAJABASA INDAH (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 6 Kamar  </h3><hr>"+ "No. Hp: 089714263776 <hr>"+" Rp.6.500.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra5.jpg height= 100% width= 100%> </div> </div>"},
+    {lat: -5.380294, lng:105.2267883, info:"<h2>GRIYA EISKA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 3 Kamar  </h3><hr>"+ "No. Hp: 089256456150 <hr>"+" Rp.9.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra6.jpg height= 100% width= 100%> </div> </div>"},
+    
+    //Kost sekitar Teknokrat
+    {lat: -5.382029, lng: 105.253434, info:"<h2>KOST IVANA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia: 2 Kamar  </h3><h3>Harga Kost: 5.000.000</h3><hr>"+ "No. Hp: 089256714151 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra8.jpg height= 100% width= 100%> </div> </div>"},
+    {lat: -5.380362, lng: 105.257662, info:"<h2>KOST IVA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia: 2 Kamar  </h3><h3>Harga Kost: 8.000.000</h3><hr>"+ "No. Hp: 089256714150 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra9.jpg height= 100% width= 100%> </div> </div>"},
+    {lat: -5.381366, lng: 105.250216, info:"<h2>KOST IMANUEL (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia: KAMAR PENUH  </h3><h3>Harga Kost: 10.000.000</h3><hr>"+ "No. Hp: 086789615160 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra10.jpg height= 100% width= 100%> </div> </div>"},
+    {lat: -5.3798407, lng: 105.256767, info:"<h2>KOST CEMARA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 2 Kamar  </h3><hr>"+ "No. Hp: 089256714150 <hr>"+" Rp.8.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra7.jpg height= 100% width= 100%> </div> </div>"},
+    {lat: -5.381508, lng: 105.250032, info:"<h2>KOST RAPINDO (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= KAMAR PENUH  </h3><hr>"+ "No. Hp: 086789615160 <hr>"+" Rp.10.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra4.jpg height= 100% width= 100%> </div> </div>"},
+      
+    ];
+
+google.maps.event.addDomListener(window, "load", initMap);
+   </script>
+<script async defer 
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAICvEJEVcEqp6JxtFoP8YsvaCZ5lRjl-s&callback=initMap"></script>
+<script src="src/markerclusterer.js">
+</script>
+</html>

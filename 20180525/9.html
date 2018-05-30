@@ -1,0 +1,110 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="menu.css"></link>
+    <link rel="stylesheet" type="text/css" href="popup.css"></link>
+    <head>
+        <title>SIG Kostan Kota Bandar Lampung</title>
+        <style>
+            #map {
+                background-color: gray;
+                width: 100%;
+                height: 400px;
+            }
+            .footer {
+                width:auto;
+                height: 10px;
+                background-color:darkcyan;
+                color:white;
+                padding:20px;
+      }
+      
+        </style>
+    </head>
+    <center>
+            <div class="header"> <img src= sikos.png height= "70" width= "70"> </div>
+            <h1><font  color= "darkcyan">SIG Kost Rentangan Harga >9 Juta</h1></font>
+        </center>
+        <body bgcolor=#008B8B>
+                <div class="header">
+                    <div class="header">
+                        <div class= "sidebar">
+                        <a class="active" href="SIG_KostBandarLampung.html">BERANDA</a>
+                        <div class="s1">
+                        <button class="btn1">PILIHAN KOST</button>
+                        <div class="sidebar3">
+                        <a href="kosputra.html" target='blank'>KOST PUTRA</a>
+                        <a href="kosputri.html" target='blank' >KOST PUTRI</a>
+                    </div></div>
+                        <div class="s2">
+                        <button class="btn2">POLYGON</button>
+                        <div class="sidebar4">
+                            <a href="polygonjson.html" target='blank' >KOST SEKITAR UNILA</a>
+                            <a href="polygonjson2.html" target='blank' >KOST SEKITAR MALAHAYATI</a>
+                            <a href="polygonjson3.html" target='blank' >KOST SEKITAR TEKNOKRAT</a>
+                        </div></div>
+                        <div class="s3">
+                            <button class="btn3">RENTANG HARGA KOST</button>
+                            <div class="sidebar5">
+                            <a href="3-5.html" target='blank' >3 - 5 JUTA</a>
+                            <a href="6-8.html" target='blank' >6 - 8 JUTA</a>
+                            <a href="9.html" target='blank' > >9  JUTA</a>
+                            </div></div>
+                            <a class="active" href="direction.html">PETUNJUK LOKASI</a>
+                            <a class="active" href="kontak.html">KONTAK</a>
+                            <a class="active" href="help.html">BANTUAN</a>
+                            <a class="active" href="tentang.html">TENTANG</a>
+                            <a class="active" href="login.php">KELUAR</a>
+                         </div></div>
+                         </div></div>
+                <div id="map"></div>
+                <div class="footer"> <center>Copyright &copy; 2018. All rights reserved. Designed and developed by Designed by Amelia Jasmine, Intan Dinasti, Dian Pitaloka</center></div>
+        </body>
+    <script>
+function initMap() {
+  var lampung = {lat: -4.558585, lng: 105.406808};
+            var map=new google.maps.Map(document.getElementById('map'),{zoom:8,center:lampung});
+            console.log(map);
+            var infowindow = new google.maps.InfoWindow();
+            var contentString = '<h1>PROVINSI LAMPUNG</h1><hr>'+
+                                 '<h5> Memiliki 15 Kabupaten/Kota </hr5>';
+            infowindow.setContent(contentString);
+   
+   var marker=new google.maps.Marker({position:lampung,map:map});
+            marker.addListener('click',function(){
+                infowindow.open(map,marker);
+            });
+  var infoWin = new google.maps.InfoWindow();
+  
+  var markers = locations.map(function(location, i) {
+    var marker = new google.maps.Marker({
+      position: location
+    });
+    google.maps.event.addListener(marker, 'click', function(evt) {
+      infoWin.setContent(location.info);
+      infoWin.open(map, marker);
+    })
+    return marker;
+  });
+
+  // Add a marker clusterer to manage the markers.
+  var markerCluster = new MarkerClusterer(map, markers, {
+    imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+  });
+
+}
+var locations = [
+  //Kost sekitar Malahayati
+    {lat: -5.380294, lng:105.2267883, info:"<h2>GRIYA EISKA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 3 Kamar  </h3><hr>"+ "No. Hp: 089256456150 <hr>"+" Rp.9.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra6.jpg height= 100% width= 100%> </div> </div>"},
+ //Kost sekitar Teknokrat
+        {lat: -5.379572, lng: 105.255881, info:"<h2>KOST PELITA 1 (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= KAMAR PENUH  </h3><hr>"+ "No. Hp: 089315615160 <hr> "+" Rp.9.500.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri12.jpg height= 100% width= 100%> </div> </div>"},
+        {lat: -5.3783222, lng: 105.2527276, info:"<h2>KOST HIDAYAH (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 083976483230 <hr> "+" Rp.9.750.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri3.jpg height= 100% width= 100%> </div> </div>"},
+        {lat: -5.379416, lng: 105.252456, info:"<h2>KOST PUTRI M2M (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 083976483240 <hr> "+" Rp.9.800.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri4.jpg height= 100% width= 100%> </div> </div>"},
+        {lat: -5.381508, lng: 105.250032, info:"<h2>KOST RAPINDO (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= KAMAR PENUH  </h3><hr>"+ "No. Hp: 086789615160 <hr>"+" Rp.10.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra4.jpg height= 100% width= 100%> </div> </div>"},
+    ];
+
+google.maps.event.addDomListener(window, "load", initMap);
+   </script>
+<script async defer 
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAICvEJEVcEqp6JxtFoP8YsvaCZ5lRjl-s&callback=initMap"></script>
+<script src="src/markerclusterer.js">
+</script>
+</html>
