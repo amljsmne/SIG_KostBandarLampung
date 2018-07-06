@@ -1,0 +1,170 @@
+ 	{
+            position: new google.maps.LatLng(-5.380294,105.2267883),
+            type: 'putra',info:"<h2>GRIYA EISKA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 3 Kamar  </h3><hr>"+ "No. Hp: 089256456150 <hr>"+" Rp.9.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra6.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.381508,105.250032),
+            type: 'putra',info: "<h2>KOST RAPINDO (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= KAMAR PENUH  </h3><hr>"+ "No. Hp: 086789615160 <hr>"+" Rp.10.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra4.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.379572,105.255881),
+            type: 'putri',info: "<h2>KOST PELITA 1 (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= KAMAR PENUH  </h3><hr>"+ "No. Hp: 089315615160 <hr> "+" Rp.9.500.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri12.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.3783222,105.2527276),
+            type: 'putri',info: "<h2>KOST HIDAYAH (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 083976483230 <hr> "+" Rp.9.750.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri3.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.379416,105.252456),
+            type: 'putri',info: "<h2>KOST PUTRI M2M (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 083976483240 <hr> "+" Rp.9.800.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri4.jpg height= 100% width= 100%> </div> </div>"
+          }
+
+	{
+            position: new google.maps.LatLng(-5.3622294,105.2380615),
+            type: 'putra',info:"<h2>ASRAMA PERWIRA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 3 Kamar  </h3><hr>"+ "No. Hp: 089367382523 <hr>"+" Rp.6.350.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra2.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.3682831,105.2389196),
+            type: 'putra',info: "<h2>MYQIA HOUSE  (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 4 Kamar  </h3><hr>"+ "No. Hp: 0812367063111 <hr>"+" Rp.7.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra3.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.3646867,105.254068),
+            type: 'putra',info: "<h2>SUROPATI GOLDEN GREEN (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 0812345673111 <hr>"+" Rp.8.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra8.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.3749128,105.2267923),
+            type: 'putra',info: "<h2>KOST RAJABASA INDAH (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 6 Kamar  </h3><hr>"+ "No. Hp: 089714263776 <hr>"+" Rp.6.500.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra5.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.3798407,105.256767),
+            type: 'putra',info: "<h2>KOST CEMARA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 2 Kamar  </h3><hr>"+ "No. Hp: 089256714150 <hr>"+" Rp.8.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra7.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.360936,105.250253),
+            type: 'putri',info: "<h2>VILLA KERINCI 2 (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 4 Kamar  </h3><hr>"+ "No. Hp: 089367123423 <hr>"+" Rp.6.450.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri5.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.3725214,105.2490402),
+            type: 'putri',info: "<h2>KOST HAPSARI (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 089562807188 <hr>"+" Rp.7.900.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri6.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.376449,105.2209709),
+            type: 'putri',info: "<h2>GRAHA MINDA (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 089562217188 <hr>"+" Rp.7.800.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri8.jpg height= 100% width= 100%> </div> </div>"
+          }
+
+ {
+            position: new google.maps.LatLng(-5.371302,105.243629),
+            type: 'putri',info:"<h2>KOST MAWAR (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 3 Kamar  </h3><hr>"+ "No. Hp: 0893673825618 <hr>"+" Rp.3.500.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri1.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.3709942,105.2443481),
+            type: 'putri',info: "<h2>KOST BUMI PUSPA KENCANA  (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 4 Kamar  </h3><hr>"+ "No. Hp: 0812367063122 <hr>"+" Rp.4.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri2.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.3601148,105.245269),
+            type: 'putri',info: "<h2>ASRAMA SEKALA BEKHAK (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= KAMAR PENUH  </h3><hr>"+ "No. Hp: 0822372783222 <hr>"+" Rp.3.700.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri3.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.3635964,105.2361116),
+            type: 'putri',info: "<h2>KOST FAIRUZ (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 11 Kamar  </h3><hr>"+ "No. Hp: 0897646252171 <hr>"+" Rp.5.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri4.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.3790221,105.2221617),
+            type: 'putri',info: "<h2>NAYLAH GUEST HOUSE (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 089562217181 <hr>"+" Rp.4.500.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri7.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.382029,105.253434),
+            type: 'putri',info: "<h2>WISMA KIRANA II (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 2 Kamar  </h3><hr>"+ "No. Hp: 089256714151 <hr>"+" Rp.3.700.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri9.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.381379,105.2505839),
+            type: 'putri',info: "<h2>KOST ANGGRAINI (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= KAMAR PENUH  </h3><hr>"+ "No. Hp: 089315615156 <hr>"+" Rp.4.300.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri10.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.382,105.2559989),
+            type: 'putri',info: "<h2>PONDOK HIJAU KRAMAT (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 083976483253 <hr>"+" Rp.3.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri11.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.365230,105.250078),
+            type: 'putra',info: "<h2>WISMA RAHMAYANI (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia=  KAMAR PENUH  </h3><hr>"+ "No. Hp: 0891564526273 <hr>"+" Rp.3.350.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra1.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.3827567,105.2248812),
+            type: 'putra',info: "<h2>KOST RAISYA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 6 Kamar  </h3><hr>"+ "No. Hp: 089714263766 <hr>"+" Rp.4.200.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra4.jpg height= 100% width= 100%> </div> </div>"
+          }
+
+var locations = [
+  //Kost sekitar Universitas Lampung
+        {lat: -5.371302, lng: 105.243629, info: "<h2>KOST MAWAR (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 3 Kamar  </h3><hr>"+ "No. Hp: 0893673825618 <hr> "+" Rp.3.500.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri1.jpg height= 100% width= 100%> </div> </div>"},
+        {lat: -5.3709942, lng: 105.2443481, info:"<h2>KOST BUMI PUSPA KENCANA  (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 4 Kamar  </h3><hr>"+ "No. Hp: 0812367063122 <hr>"+" Rp.4.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri2.jpg height= 100% width= 100%> </div> </div>"},
+        {lat: -5.3601148, lng: 105.245269,info:"<h2>ASRAMA SEKALA BEKHAK (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= KAMAR PENUH  </h3><hr>"+ "No. Hp: 0822372783222 <hr>"+" Rp.3.700.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri3.jpg height= 100% width= 100%> </div> </div>"},
+        {lat: -5.3635964, lng: 105.2361116, info:"<h2>KOST FAIRUZ (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 11 Kamar  </h3><hr>"+ "No. Hp: 0897646252171 <hr>"+" Rp.5.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri4.jpg height= 100% width= 100%> </div> </div>"},
+        {lat: -5.360936, lng: 105.250253, info: "<h2>VILLA KERINCI 2 (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 4 Kamar  </h3><hr>"+ "No. Hp: 089367123423 <hr>"+" Rp.6.450.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri5.jpg height= 100% width= 100%> </div> </div>"},
+        {lat: -5.3725214, lng: 105.2490402, info:"<h2>KOST HAPSARI (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 089562807188 <hr>"+" Rp.7.900.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri6.jpg height= 100% width= 100%> </div> </div>"},
+    //Kost sekitar Malahayati
+        {lat: -5.3790221, lng: 105.2221617, info:"<h2>NAYLAH GUEST HOUSE (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 089562217181 <hr>"+" Rp.4.500.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri7.jpg height= 100% width= 100%> </div> </div>"},
+        {lat: -5.376449, lng: 105.2209709, info:"<h2>GRAHA MINDA (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 089562217188 <hr>"+" Rp.7.800.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri8.jpg height= 100% width= 100%> </div> </div>"},
+       
+    //Kost sekitar Teknokrat
+        {lat: -5.382029, lng: 105.253434, info:"<h2>WISMA KIRANA II (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 2 Kamar  </h3><hr>"+ "No. Hp: 089256714151 <hr>"+" Rp.3.700.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri9.jpg height= 100% width= 100%> </div> </div>"},
+        {lat: -5.381379, lng: 105.2505839, info:"<h2>KOST ANGGRAINI (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= KAMAR PENUH  </h3><hr>"+ "No. Hp: 089315615156 <hr>"+" Rp.4.300.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri10.jpg height= 100% width= 100%> </div> </div>"},
+        {lat: -5.382, lng: 105.2559989, info:"<h2>PONDOK HIJAU KRAMAT (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 083976483253 <hr>"+" Rp.3.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri11.jpg height= 100% width= 100%> </div> </div>"},
+        {lat: -5.379572, lng: 105.255881, info:"<h2>KOST PELITA 1 (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= KAMAR PENUH  </h3><hr>"+ "No. Hp: 089315615160 <hr>"+" Rp.9.500.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri12.jpg height= 100% width= 100%> </div> </div>"},
+        {lat: -5.3783222, lng: 105.2527276, info:"<h2>KOST HIDAYAH (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 083976483230 <hr>"+" Rp.9.750.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri3.jpg height= 100% width= 100%> </div> </div>"},
+        {lat: -5.379416, lng: 105.252456, info:"<h2>KOST PUTRI M2M (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 083976483240 <hr>"+" Rp.9.800.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri4.jpg height= 100% width= 100%> </div> </div>"},
+      
+       ];
+
+var locations = [
+    //Kost sekitar Universitas Lampung
+    {lat: -5.365230, lng:  105.250078,info:"<h2>WISMA RAHMAYANI (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia=  KAMAR PENUH  </h3><hr>"+ "No. Hp: 0891564526273 <hr>"+" Rp.3.350.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra1.jpg height= 100% width= 100%> </div> </div>"},
+    {lat: -5.3622294, lng: 105.2380615, info: "<h2>ASRAMA PERWIRA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 3 Kamar  </h3><hr>"+ "No. Hp: 089367382523 <hr>"+" Rp.6.350.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra2.jpg height= 100% width= 100%> </div> </div>"},
+    {lat: -5.3682831, lng: 105.2389196, info:"<h2>MYQIA HOUSE  (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 4 Kamar  </h3><hr>"+ "No. Hp: 0812367063111 <hr>"+" Rp.7.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra3.jpg height= 100% width= 100%> </div> </div>"},
+    {lat: -5.3646867, lng: 105.254068, info:"<h2>SUROPATI GOLDEN GREEN (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 0812345673111 <hr>"+" Rp.8.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra8.jpg height= 100% width= 100%> </div> </div>"},
+        
+    //Kost sekitar Malahayati
+    {lat: -5.3827567, lng: 105.2248812, info: "<h2>KOST RAISYA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 6 Kamar  </h3><hr>"+ "No. Hp: 089714263766 <hr>"+" Rp.4.200.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra4.jpg height= 100% width= 100%> </div> </div>"},
+    {lat: -5.3749128, lng: 105.2267923, info: "<h2>KOST RAJABASA INDAH (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 6 Kamar  </h3><hr>"+ "No. Hp: 089714263776 <hr>"+" Rp.6.500.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra5.jpg height= 100% width= 100%> </div> </div>"},
+    {lat: -5.380294, lng:105.2267883, info:"<h2>GRIYA EISKA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 3 Kamar  </h3><hr>"+ "No. Hp: 089256456150 <hr>"+" Rp.9.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra6.jpg height= 100% width= 100%> </div> </div>"},
+    
+    //Kost sekitar Teknokrat
+    {lat: -5.382029, lng: 105.253434, info:"<h2>KOST IVANA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia: 2 Kamar  </h3><h3>Harga Kost: 5.000.000</h3><hr>"+ "No. Hp: 089256714151 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra8.jpg height= 100% width= 100%> </div> </div>"},
+    {lat: -5.380362, lng: 105.257662, info:"<h2>KOST IVA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia: 2 Kamar  </h3><h3>Harga Kost: 8.000.000</h3><hr>"+ "No. Hp: 089256714150 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra9.jpg height= 100% width= 100%> </div> </div>"},
+    {lat: -5.381366, lng: 105.250216, info:"<h2>KOST IMANUEL (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia: KAMAR PENUH  </h3><h3>Harga Kost: 10.000.000</h3><hr>"+ "No. Hp: 086789615160 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra10.jpg height= 100% width= 100%> </div> </div>"},
+    {lat: -5.3798407, lng: 105.256767, info:"<h2>KOST CEMARA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 2 Kamar  </h3><hr>"+ "No. Hp: 089256714150 <hr>"+" Rp.8.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra7.jpg height= 100% width= 100%> </div> </div>"},
+    {lat: -5.381508, lng: 105.250032, info:"<h2>KOST RAPINDO (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= KAMAR PENUH  </h3><hr>"+ "No. Hp: 086789615160 <hr>"+" Rp.10.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra4.jpg height= 100% width= 100%> </div> </div>"},
+      
+    ];
+
+
+
+var locations = [
+            {
+            position: new google.maps.LatLng(-5.380294,105.2267883),
+            type: 'putra',info:"<h2>GRIYA EISKA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 3 Kamar  </h3><hr>"+ "No. Hp: 089256456150 <hr>"+" Rp.9.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra6.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.381508,105.250032),
+            type: 'putra',info: "<h2>KOST RAPINDO (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= KAMAR PENUH  </h3><hr>"+ "No. Hp: 086789615160 <hr>"+" Rp.10.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra4.jpg height= 100% width= 100%> </div> </div>"
+          },{
+            position: new google.maps.LatLng(-5.3622294,105.2380615),
+            type: 'putra',info:"<h2>ASRAMA PERWIRA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 3 Kamar  </h3><hr>"+ "No. Hp: 089367382523 <hr>"+" Rp.6.350.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra2.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.3682831,105.2389196),
+            type: 'putra',info: "<h2>MYQIA HOUSE  (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 4 Kamar  </h3><hr>"+ "No. Hp: 0812367063111 <hr>"+" Rp.7.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra3.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.3646867,105.254068),
+            type: 'putra',info: "<h2>SUROPATI GOLDEN GREEN (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 0812345673111 <hr>"+" Rp.8.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra8.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.3749128,105.2267923),
+            type: 'putra',info: "<h2>KOST RAJABASA INDAH (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 6 Kamar  </h3><hr>"+ "No. Hp: 089714263776 <hr>"+" Rp.6.500.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra5.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.3798407,105.256767),
+            type: 'putra',info: "<h2>KOST CEMARA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 2 Kamar  </h3><hr>"+ "No. Hp: 089256714150 <hr>"+" Rp.8.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra7.jpg height= 100% width= 100%> </div> </div>"
+          },{
+            position: new google.maps.LatLng(-5.365230,105.250078),
+            type: 'putra',info: "<h2>WISMA RAHMAYANI (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia=  KAMAR PENUH  </h3><hr>"+ "No. Hp: 0891564526273 <hr>"+" Rp.3.350.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra1.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.3827567,105.2248812),
+            type: 'putra',info: "<h2>KOST RAISYA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 6 Kamar  </h3><hr>"+ "No. Hp: 089714263766 <hr>"+" Rp.4.200.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra4.jpg height= 100% width= 100%> </div> </div>"
+          }
+        ];
+
+
+ <div class="column">
+                <form action="/kontak.html">
+                  <label for="fname">Nama Lengkap</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Nama Lengkap">
+                  <label for="lname">Alamat Email</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Email">
+                  <label for="country">Provinsi</label>
+                  <select id="country" name="Provinsi">
+                    <option value="australia">Banndar Lampung</option>
+                    <option value="canada">Jakarta</option>
+                    <option value="usa">Palembang</option>
+                  </select>
+                  <label for="subject">Pesan</label>
+                  <textarea id="subject" name="subject" placeholder="Pesan Anda" style="height:170px"></textarea>
+                  <input type="submit" value="Kirim">
+                </form>
+              </div>
+            </div>
