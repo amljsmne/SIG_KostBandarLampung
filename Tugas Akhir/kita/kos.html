@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>SIG Kost Bandar Lampung</title>
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+    <h1><center>Sistem Informasi Geografis Kost Bandar Lampung</center></h1>
+    <script src="google.js"></script>
+    
+</head>
+<body>
+    <div class="maps1"> 
+    <div class="maps2" id="gMap" ></div><br>
+    <form>
+    <center><table>
+    <tr>
+    <td><h4>Latitude : </h4>
+    <input class="maps4" type="text" id="lat" name="lat" value="">
+    </td>
+    <td>
+    <h4>Longitude : </h4>
+    <input class="maps4"  type="text" id="lng" name="lng" value="">
+    </td>
+    </tr>
+</table>
+<h4>Deskripsi Marker : </h4>
+<input class="maps3" type="text" id="desc" name="desc" value="">
+<br><br>
+<button class="btn" type="button" name="Simpan" ><center>Simpan</center></button>
+</form>
+</center>
+</div>
+<div class="footer"> <center> Copyright &copy; 2018. All rights reserved. Designed and developed by AmeliaJasmine_1617051021 IntanDinasti_1617051033 DianPitaloka_1657051017</center></div>
+<div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;'><a title="000webhost logo" rel="nofollow" target="_blank" href="https://www.000webhost.com/free-website-sign-up?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_campaign=ss-footer_logo&amp;utm_medium=000_logo&amp;utm_content=website"><img src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png" alt="000webhost logo"></a></div></body>
+<script> 
+        var marker; 
+  
+        function titikmarker(lokasi, titik){ 
+             
+            if(marker){ 
+              marker.setPosition(titik); 
+            } else { 
+              marker = new google.maps.Marker({ 
+                position: lokasi, 
+                map: lokasi 
+              }); 
+            } 
+            document.getElementById("lat").value = titik.lat(); 
+            document.getElementById("lng").value = titik.lng(); 
+         document.getElementById("desc").value = titik.desc(); 
+             
+        } 
+           
+        function initialize() { 
+          var propertiLokasi = { 
+            center:new google.maps.LatLng(-5.3971, 105.2668), 
+            zoom:13, 
+            mapTypeId:google.maps.MapTypeId.ROADMAP 
+          }; 
+           
+          var lokasi = new google.maps.Map(document.getElementById("gMap"), propertiLokasi); 
+          var infoWindow = new google.maps.InfoWindow; 
+          google.maps.event.addListener(lokasi, 'click', function(event) { 
+            titikmarker(this, event.latLng); 
+          }); 
+          google.maps.event.addListener(lokasi,'rightclick',function(event){ 
+          marker.setPosition(null); 
+          }); 
+        
+        
+        } 
+            function bindInfoWindow(marker, map, infoWindow, html) { 
+              google.maps.event.addListener(marker, 'click', function() { 
+                infoWindow.setContent(html); 
+                infoWindow.open(map, marker); 
+              }); 
+            } 
+        
+        google.maps.event.addDomListener(window, 'load', initialize); 
+           
+        </script> 
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4nmLthYIZvVTNnrrI83sljcLgDTys7Zg&callback=initMap"> 
+  </script> 
+</html>
