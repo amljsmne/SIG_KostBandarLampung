@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" type="text/css" href="menu.css"></link>
+  <head>
+    <title>SIG Persebaran Pariwisata Provinsi Lampung</title>
+    
+</head>
+<style>
+    #map {
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+    }
+    .footer {
+        width:auto;
+        height: 10px;
+        background-color:darkcyan;
+        color:white;
+        padding:20px;
+}
+</style>
+</head>
+<center>
+    <div class="header"> <img src= sikos.png height= "70" width= "70"> </div>
+    <h1><font  color= "darkcyan">Overlay Graha Minda (Putri)</h1></font>
+</center>
+<body bgcolor=#008B8B>
+            <div class="header">
+                <div class= "sidebar">
+                <a class="active" href="SIG_KostBandarLampung.html">BERANDA</a>
+                <div class="s1">
+                <button class="btn1">PILIHAN KOST</button>
+                <div class="sidebar3">
+                <a href="kosputra.html" target='blank'>KOST PUTRA</a>
+                <a href="kosputri.html" target='blank' >KOST PUTRI</a>
+            </div></div>
+                <div class="s2">
+                <button class="btn2">POLYGON</button>
+                <div class="sidebar4">
+               <a href="polygonjson.html" target='blank' >KOST SEKITAR UNILA</a>
+               <a href="polygonjson2.html" target='blank' >KOST SEKITAR MALAHAYATI</a>
+               <a href="polygonjson3.html" target='blank' >KOST SEKITAR TEKNOKRAT</a>
+                </div></div>
+                <div class="s3">
+                    <button class="btn3">RENTANG HARGA KOST</button>
+                    <div class="sidebar5">
+                    <a href="3-5.html" target='blank' >3 - 5 JUTA</a>
+                    <a href="6-8.html" target='blank' >6 - 8 JUTA</a>
+                    <a href="9.html" target='blank' > >9  JUTA</a>
+                    </div></div>
+                    <div class="s4">
+                        <button class="btn4">OVERLAYS</button>
+                        <div class="sidebar6">
+                        <a href="overlaymawar.html" target='blank' >OVERLAYS KOST MAWAR (PUTRI)</a>
+                        <a href="overlaybumi.html" target='blank' >OVERLAYS KOST TAPIS (PUTRI)</a>
+                        <a href="overlaykerinci.html" target='blank' >OVERLAYS KOST KERINCI (PUTRI)</a>
+                        <a href="overlayminda.html" target='blank' >OVERLAYS GRAHA MINDA (PUTRI)</a>
+                        <a href="overlayanggraini.html" target='blank' >OVERLAYS KOST ANGGRAINI (PUTRI)</a>
+                        <a href="overlayrahmayani.html" target='blank' >OVERLAYS WISMA RAHMAYANI (PUTRA)</a>
+                        <a href="overlayperiwra.html" target='blank' >OVERLAYS ASRAMA PERWIRA (PUTRA)</a>
+                        <a href="overlayrajabasa.html" target='blank' >OVERLAYS KOST RAJABASA INDAH (PUTRA)</a>
+                        <a href="overlayimanuel.html" target='blank' >OVERLAYS KOST IMANUEL (PUTRA)</a>
+                        <a href="overlaycemara.html" target='blank' >OVERLAYS KOST CEMARA(PUTRA)</a>
+                        </div></div>
+                    <a class="active" href="direction.html">PETUNJUK LOKASI</a>
+                    <a class="active" href="kontak.html">KONTAK</a>
+                    <a class="active" href="help.html">BANTUAN</a>
+                    <a class="active" href="tentang.html">TENTANG</a>
+                    <a class="active" href="login.php">KELUAR</a>
+                 </div></div>
+                 </div></div>
+
+    <body>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAICvEJEVcEqp6JxtFoP8YsvaCZ5lRjl-s"></script>
+          <script>
+            // This example creates a custom overlay called USGSOverlay, containing
+            // a U.S. Geological Survey (USGS) image of the relevant area on the map.
+      
+            // Set the custom overlay object's prototype to a new instance
+            // of OverlayView. In effect, this will subclass the overlay class therefore
+            // it's simpler to load the API synchronously, using
+            // google.maps.event.addDomListener().
+            // Note that we set the prototype to an instance, rather than the
+            // parent class itself, because we do not wish to modify the parent class.
+      
+            var overlay;
+            USGSOverlay.prototype = new google.maps.OverlayView();
+      
+            // Initialize the map and the custom overlay.
+      
+            function initMap() {
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 13,
+                center: {lat: -5.3971396, lng: 105.2667887},
+                mapTypeId: 'roadmap'
+              });
+      
+              var bounds = new google.maps.LatLngBounds(
+                  new google.maps.LatLng(-5.4349129,105.1825665),
+                  new google.maps.LatLng(-5.376449,105.2209709));
+      
+              var srcImage = 'gambar/kost4.jpg';
+              overlay = new USGSOverlay(bounds, srcImage, map);
+            }
+      
+            function USGSOverlay(bounds, image, map) {
+      
+              this.bounds_ = bounds;
+              this.image_ = image;
+              this.map_ = map;
+              this.div_ = null;
+              this.setMap(map);
+            }
+            USGSOverlay.prototype.onAdd = function() {
+      
+              var div = document.createElement('div');
+              div.style.borderStyle = 'none';
+              div.style.borderWidth = '0px';
+              div.style.position = 'absolute';
+      
+              var img = document.createElement('img');
+              img.src = this.image_;
+              img.style.width = '100%';
+              img.style.height = '100%';
+              img.style.position = 'absolute';
+              div.appendChild(img);
+      
+              this.div_ = div;
+      
+              // Add the element to the "overlayLayer" pane.
+              var panes = this.getPanes();
+              panes.overlayLayer.appendChild(div);
+            };
+      
+            USGSOverlay.prototype.draw = function() {
+              var overlayProjection = this.getProjection();
+              var sw = overlayProjection.fromLatLngToDivPixel(this.bounds_.getSouthWest());
+              var ne = overlayProjection.fromLatLngToDivPixel(this.bounds_.getNorthEast());
+      
+              var div = this.div_;
+              div.style.left = sw.x + 'px';
+              div.style.top = ne.y + 'px';
+              div.style.width = (ne.x - sw.x) + 'px';
+              div.style.height = (sw.y - ne.y) + 'px';
+            };
+      
+            USGSOverlay.prototype.onRemove = function() {
+              this.div_.parentNode.removeChild(this.div_);
+              this.div_ = null;
+            };
+      
+            google.maps.event.addDomListener(window, 'load', initMap);
+          </script>
+      <div id="map"></div>
+      <div class="footer"> <center>Copyright &copy; 2018. All rights reserved. Designed and developed by Designed by Amelia Jasmine, Intan Dinasti, Dian Pitaloka</center></div> </body>
+</html>
