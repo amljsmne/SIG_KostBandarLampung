@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="menu.css"></link>
+<link rel="stylesheet" type="text/css" href="popup.css"></link>    
+  <head>
+    <title>SIG Kostan Kota Bandar Lampung</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      #map {
+        background-color: gray;
+        height: 400px;
+        width: 100%;
+      }
+      #legend {
+        font-family: Arial, sans-serif;
+        background: #fff;
+        padding: 10px;
+        margin: 10px;
+        border: 3px solid darkcyan;
+      }
+      #legend h3 {
+        margin-top: 0;
+      }
+      #legend img {
+        vertical-align: middle;
+      }
+      .footer {
+                width:auto;
+                height: 10px;
+                background-color:darkcyan;
+                color:white;
+                padding:20px;
+      }
+    </style>
+  </head>
+  <center>
+    <div class="header"> <img src= sikos.png height= "70" width= "70"> </div>
+    <h1><font  color= "darkcyan">SIG Kost Rentangan Harga >9 Juta</h1></font>
+    </center>
+    <body bgcolor=#008B8B>
+            <div class="header">
+                    <div class="header">
+                        <div class= "sidebar">
+                        <a class="active" href="SIG_KostBandarLampung.html">BERANDA</a>
+                        <div class="s1">
+                        <button class="btn1">PILIHAN KOST</button>
+                        <div class="sidebar3">
+                        <a href="kosputra.html" target='blank'>KOST PUTRA</a>
+                        <a href="kosputri.html" target='blank' >KOST PUTRI</a>
+                    </div></div>
+                        <div class="s2">
+                        <button class="btn2">POLYGON</button>
+                        <div class="sidebar4">
+                            <a href="polygonjson.html" target='blank' >KOST SEKITAR UNILA</a>
+                            <a href="polygonjson2.html" target='blank' >KOST SEKITAR MALAHAYATI</a>
+                            <a href="polygonjson3.html" target='blank' >KOST SEKITAR TEKNOKRAT</a>
+                        </div></div>
+                        <div class="s3">
+                            <button class="btn3">RENTANG HARGA KOST</button>
+                            <div class="sidebar5">
+                            <a href="3-5.html" target='blank' >3 - 5 JUTA</a>
+                            <a href="6-8.html" target='blank' >6 - 8 JUTA</a>
+                            <a href="9.html" target='blank' > >9  JUTA</a>
+                            </div></div>
+                            <div class="s4">
+                                    <button class="btn4">OVERLAYS</button>
+                                    <div class="sidebar6">
+                                    <a href="overlaymawar.html" target='blank' >OVERLAYS KOST MAWAR (PUTRI)</a>
+                                    <a href="overlaybumi.html" target='blank' >OVERLAYS KOST TAPIS (PUTRI)</a>
+                                    <a href="overlaykerinci.html" target='blank' >OVERLAYS KOST KERINCI (PUTRI)</a>
+                                    <a href="overlayminda.html" target='blank' >OVERLAYS GRAHA MINDA (PUTRI)</a>
+                                    <a href="overlayanggraini.html" target='blank' >OVERLAYS KOST ANGGRAINI (PUTRI)</a>
+                                    <a href="overlayrahmayani.html" target='blank' >OVERLAYS WISMA RAHMAYANI (PUTRA)</a>
+                                    <a href="overlayperiwra.html" target='blank' >OVERLAYS ASRAMA PERWIRA (PUTRA)</a>
+                                    <a href="overlayrajabasa.html" target='blank' >OVERLAYS KOST RAJABASA INDAH (PUTRA)</a>
+                                    <a href="overlayimanuel.html" target='blank' >OVERLAYS KOST IMANUEL (PUTRA)</a>
+                                    <a href="overlaycemara.html" target='blank' >OVERLAYS KOST CEMARA(PUTRA)</a>
+                                    </div></div>
+                            <a class="active" href="direction.html">PETUNJUK LOKASI</a>
+                            <a class="active" href="kontak.html">KONTAK</a>
+                            <a class="active" href="help.html">BANTUAN</a>
+                            <a class="active" href="tentang.html">TENTANG</a>
+                            <a class="active" href="login.php">KELUAR</a>
+                         </div></div>
+                         </div></div>
+    <div id="map"></div>
+    <div id="legend"><h3>Legend</h3></div>
+    <div class="footer"> <center>Copyright &copy; 2018. All rights reserved. Designed and developed by Designed by Amelia Jasmine, Intan Dinasti, Dian Pitaloka</center></div>
+   </body>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: new google.maps.LatLng(-4.558585,105.406808),
+          mapTypeId: 'roadmap'
+        });
+        
+        
+       
+        var iconBase = 'images/';
+        var icons = {
+          putri: {
+            name: 'Kos Putri',
+            icon: iconBase + 'house1.png'
+          },
+          putra: {
+            name: 'Kos Putra',
+            icon: iconBase + 'house2.png'
+          }
+        };
+
+        var locations = [
+          {
+            position: new google.maps.LatLng(-5.380294,105.2267883),
+            type: 'putra',info:"<h2>GRIYA EISKA (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= 3 Kamar  </h3><hr>"+ "No. Hp: 089256456150 <hr>"+" Rp.9.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra6.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.381508,105.250032),
+            type: 'putra',info: "<h2>KOST RAPINDO (PUTRA)</h2><hr>"+"<h3> Jumlah kamar tersedia= KAMAR PENUH  </h3><hr>"+ "No. Hp: 086789615160 <hr>"+" Rp.10.000.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putra4.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.379572,105.255881),
+            type: 'putri',info: "<h2>KOST PELITA 1 (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= KAMAR PENUH  </h3><hr>"+ "No. Hp: 089315615160 <hr> "+" Rp.9.500.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri12.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.3783222,105.2527276),
+            type: 'putri',info: "<h2>KOST HIDAYAH (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 083976483230 <hr> "+" Rp.9.750.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri3.jpg height= 100% width= 100%> </div> </div>"
+          }, {
+            position: new google.maps.LatLng(-5.379416,105.252456),
+            type: 'putri',info: "<h2>KOST PUTRI M2M (PUTRI)</h2><hr>"+"<h3> Jumlah kamar tersedia= 1 Kamar  </h3><hr>"+ "No. Hp: 083976483240 <hr> "+" Rp.9.800.000 <hr>"+ " <div id=button><a href=#popup >Lihat Kamar</a></div><div id=popup> <div class=window><a href=# class=close-button title=Close>X</a><img src= putri4.jpg height= 100% width= 100%> </div> </div>"
+          }
+        ];
+       
+        var infoWin = new google.maps.InfoWindow();
+        // Create markers.
+        locations.forEach(function(location,i) {
+          var marker = new google.maps.Marker({
+            position: location.position,
+            icon: icons[location.type].icon,
+            map: map
+          });
+    google.maps.event.addListener(marker, 'click', function(evt) {
+      infoWin.setContent(location.info);
+      infoWin.open(map, marker);
+    })
+    return marker;
+        });
+        var legend = document.getElementById('legend');
+        for (var key in icons) {
+          var type = icons[key];
+          var name = type.name;
+          var icon = type.icon;
+          var div = document.createElement('div');
+          div.innerHTML = '<img src="' + icon + '"> ' + name;
+          legend.appendChild(div);
+        }
+
+        map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
+       
+        var markerCluster = new MarkerClusterer(map, markers, {
+    imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+    });
+    };
+    google.maps.event.addDomListener(window, "load", initMap);
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAICvEJEVcEqp6JxtFoP8YsvaCZ5lRjl-s&callback=initMap">
+    </script>
+  </body>
+</html>
