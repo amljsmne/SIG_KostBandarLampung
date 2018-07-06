@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="menu.css"></link>
+<head><title>SIG Kost Bandar Lampung</title></head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: darkcyan;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.container {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.containerr {
+    padding: 2px 16px;
+}
+</style>
+<body>
+    <div class="header">
+        <div class="header">
+            <div class= "sidebar">
+            <a class="active" href="SIG_KostBandarLampung.html">BERANDA</a>
+            <div class="s1">
+            <button class="btn1">PILIHAN KOST</button>
+            <div class="sidebar3">
+            <a href="kosputra.html" target='blank'>KOST PUTRA</a>
+            <a href="kosputri.html" target='blank' >KOST PUTRI</a>
+        </div></div>
+            <div class="s2">
+            <button class="btn2">POLYGON</button>
+            <div class="sidebar4">
+                <a href="polygonjson.html" target='blank' >KOST SEKITAR UNILA</a>
+                <a href="polygonjson2.html" target='blank' >KOST SEKITAR MALAHAYATI</a>
+                <a href="polygonjson3.html" target='blank' >KOST SEKITAR TEKNOKRAT</a>
+                </div></div>
+            <div class="s3">
+                <button class="btn3">RENTANG HARGA KOST</button>
+                <div class="sidebar5">
+                <a href="3-5.html" target='blank' >3 - 5 JUTA</a>
+                <a href="6-8.html" target='blank' >6 - 8 JUTA</a>
+                <a href="9.html" target='blank' > >9  JUTA</a>
+                </div></div>
+                <div class="s4">
+                        <button class="btn4">OVERLAYS</button>
+                        <div class="sidebar6">
+                        <a href="overlaymawar.html" target='blank' >OVERLAYS KOST MAWAR (PUTRI)</a>
+                        <a href="overlaybumi.html" target='blank' >OVERLAYS KOST TAPIS (PUTRI)</a>
+                        <a href="overlaykerinci.html" target='blank' >OVERLAYS KOST KERINCI (PUTRI)</a>
+                        <a href="overlayminda.html" target='blank' >OVERLAYS GRAHA MINDA (PUTRI)</a>
+                        <a href="overlayanggraini.html" target='blank' >OVERLAYS KOST ANGGRAINI (PUTRI)</a>
+                        <a href="overlayrahmayani.html" target='blank' >OVERLAYS WISMA RAHMAYANI (PUTRA)</a>
+                        <a href="overlayperiwra.html" target='blank' >OVERLAYS ASRAMA PERWIRA (PUTRA)</a>
+                        <a href="overlayrajabasa.html" target='blank' >OVERLAYS KOST RAJABASA INDAH (PUTRA)</a>
+                        <a href="overlayimanuel.html" target='blank' >OVERLAYS KOST IMANUEL (PUTRA)</a>
+                        <a href="overlaycemara.html" target='blank' >OVERLAYS KOST CEMARA(PUTRA)</a>
+                        </div></div>
+                <a class="active" href="direction.html">PETUNJUK LOKASI</a>
+                <a class="active" href="kontak.html">KONTAK</a>
+                <a class="active" href="help.html">BANTUAN</a>
+                <a class="active" href="tentang.html">TENTANG</a>
+                <a class="active" href="login.php">KELUAR</a>
+             </div></div>
+    </div></div>
+    <div class="container">
+            <div style="text-align:center">
+              <h2>Kontak Kami</h2>
+              <center><div class="card">
+                    <img src="sikos.png" alt="Avatar" style="heigh:100px;width:100px">
+                    <div class="containerr">
+                      <h4><b>SI-KOS</b></h4> 
+                      <p>Email : sikos.bdl@gmail.com</p> 
+                      <p>Telepon : 085622225222 </p> 
+                      <p>Alamat : Gedong Meneng Bandar Lampung </p> 
+                    </div>
+                  </div></center>
+            </div>
+            <div class="row">
+              <div class="column">
+                <div id="map" style="width:100%;height:500px"></div>
+              </div>
+             
+          </div>
+          
+          <script>
+          // Initialize google maps
+          function myMap() {
+            var myCenter = new google.maps.LatLng(-5.3668533,105.2436625);
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {center: myCenter, zoom: 20};
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({position:myCenter});
+            marker.setMap(map);
+          }
+          </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADYKfmAYScli5xJj_4uWTcPJR5x9okxOo&callback=myMap"></script>          
+  </form>
+</div>
+</body>
+<div class="footer"> <center> Copyright &copy; 2018. All rights reserved. Designed and developed by Designed by Amelia Jasmine, Intan Dinasti, Dian Pitaloka</center></div>
+</html>
