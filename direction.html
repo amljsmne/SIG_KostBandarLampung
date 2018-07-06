@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="menu.css"></link>
+    <link rel="stylesheet" type="text/css" href="popup.css"></link>
+  <head>
+    <title>SIG Kostan Kota Bandar Lampung<code>setPanel()</code></title>
+    <style>
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: white;
+        padding: 5px;
+        border: 1px solid darkcyan;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+      #right-panel {
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+        
+      }
+
+      #right-panel select, #right-panel input {
+        font-size: 15px;
+      }
+
+      #right-panel select {
+        width: 100%;
+      }
+
+      #right-panel i {
+        font-size: 12px;
+      }
+      #right-panel {
+        height: 100%;
+        float: right;
+        width: 390px;
+        overflow: auto;
+      }
+      #map {
+        margin-right: 400px;
+      }
+      #floating-panel {
+        background: white;
+        padding: 5px;
+        font-size: 14px;
+        font-family: Arial;
+        border: 1px solid darkcyan;
+        box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+        display: none;
+      }
+      @media print {
+        #map {
+          height: 500px;
+          margin: 0;
+        }
+        #right-panel {
+          float: none;
+          width: auto;
+        }
+      }
+      #floating-panell {
+        position:left;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: darkcyan;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+      .footer {
+                width:auto;
+                height: 10px;
+                background-color:darkcyan;
+                color:white;
+                padding:20px;
+      }
+    </style>
+  </head>
+  <center>
+    
+      <div class="header"> <img src= sikos.png height= "70" width= "70"> </div>
+      <h1><font  color= "darkcyan">PETUNJUK LOKASI</h1></font>
+  </center>
+  <body bgcolor=#008B8B>
+      <div class="header">
+          <div class="header">
+              <div class= "sidebar">
+              <a class="active" href="SIG_KostBandarLampung.html">BERANDA</a>
+              <div class="s1">
+              <button class="btn1">PILIHAN KOST</button>
+              <div class="sidebar3">
+              <a href="kosputra.html" target='blank'>KOST PUTRA</a>
+              <a href="kosputri.html" target='blank' >KOST PUTRI</a>
+          </div></div>
+              <div class="s2">
+              <button class="btn2">POLYGON</button>
+              <div class="sidebar4">
+                  <a href="polygonjson.html" target='blank' >KOST SEKITAR UNILA</a>
+                  <a href="polygonjson2.html" target='blank' >KOST SEKITAR MALAHAYATI</a>
+                  <a href="polygonjson3.html" target='blank' >KOST SEKITAR TEKNOKRAT</a>
+                  </div></div>
+              <div class="s3">
+                  <button class="btn3">RENTANG HARGA KOST</button>
+                  <div class="sidebar5">
+                  <a href="3-5.html" target='blank' >3 - 5 JUTA</a>
+                  <a href="6-8.html" target='blank' >6 - 8 JUTA</a>
+                  <a href="9.html" target='blank' >9  JUTA</a>
+                  </div></div>
+                  <div class="s4">
+                      <button class="btn4">OVERLAYS</button>
+                      <div class="sidebar6">
+                      <a href="overlaymawar.html" target='blank' >OVERLAYS KOST MAWAR (PUTRI)</a>
+                      <a href="overlaybumi.html" target='blank' >OVERLAYS KOST TAPIS (PUTRI)</a>
+                      <a href="overlaykerinci.html" target='blank' >OVERLAYS KOST KERINCI (PUTRI)</a>
+                      <a href="overlayminda.html" target='blank' >OVERLAYS GRAHA MINDA (PUTRI)</a>
+                      <a href="overlayanggraini.html" target='blank' >OVERLAYS KOST ANGGRAINI (PUTRI)</a>
+                      <a href="overlayrahmayani.html" target='blank' >OVERLAYS WISMA RAHMAYANI (PUTRA)</a>
+                      <a href="overlayperiwra.html" target='blank' >OVERLAYS ASRAMA PERWIRA (PUTRA)</a>
+                      <a href="overlayrajabasa.html" target='blank' >OVERLAYS KOST RAJABASA INDAH (PUTRA)</a>
+                      <a href="overlayimanuel.html" target='blank' >OVERLAYS KOST IMANUEL (PUTRA)</a>
+                      <a href="overlaycemara.html" target='blank' >OVERLAYS KOST CEMARA(PUTRA)</a>
+                      </div></div>
+                  <a class="active" href="direction.html">PETUNJUK LOKASI</a>
+                  <a class="active" href="kontak.html">KONTAK</a>
+                  <a class="active" href="help.html">BANTUAN</a>
+                  <a class="active" href="tentang.html">TENTANG</a>
+                  <a class="active" href="login.php">KELUAR</a>
+               </div></div>
+               </div></div>
+  <body>
+    <div id="floating-panel">
+      <strong>Asal:</strong>
+      <select id="start">
+        <option value="Jl. Prof. Dr. Ir. Sumantri Brojonegoro No.1,Gedong Meneng,Rajabasa,Bandar Lampung">Universitas Lampung</option>
+        <option value="Jl. Bumi Manti IV No.15 ,Kp. Baru Kedaton,Bandar Lampung">Wisma Rahmayani</option>
+        <option value="Jl. Soekarno - Hatta No.8,Rajabasa Raya,Rajabasa,Bandar Lampung">Asrama Perwira(putra)</option>
+        <option value="Jl. Jauhari Wahid,Rajabasa,Bandar Lampung, Lampung 35141">Myqia House(putra)</option>
+        <option value="suropati golden green Jalan untung suropati,Labuhan Ratu,Kedaton,Bandar Lampung, Lampung 35141">Suropati Golden(putra)</option>
+        <option value="Jl. Pembina,Langkapura,Kota Bandar Lampung, Lampung 35151">Kost Raisya(putra)</option>
+        <option value="Jl. Pembina,Langkapura,Kota Bandar Lampung, Lampung 35151">Kost Rajabasa Indah(putra)</option>
+        <option value="GRIYA EISKA,Perumahan Bukit Alam Permai,Klp. Tiga,Langkapura,Kota Bandar Lampung, ">Griya Eiska(putra)</option>
+        <option value="Jl. Pembina,Langkapura,Kota Bandar Lampung, Lampung 35151">Kost Ivana(putra)</option>
+        <option value="Jl. Pembina,Langkapura,Kota Bandar Lampung, Lampung 35151">Kost Iva(putra)</option>
+        <option value="Imanuel Kost,Jl Kopi 22-A,Gedong Meneng,Rajabasa,Kota Bandar Lampung, ">Kost Imanuel(putra)</option>
+        <option value="Cemara Kost,Gg. Cemara No.8-B,Labuhan Ratu,Kedaton,Kota Bandar Lampung">Kost Cemara(putra)</option>
+        <option value="Rapindo Kost,Jl. Soekardi Hamdani Jl. Palapa 5C No.23,Labuhan Ratu,Kedaton,Kota Bandar Lampung">Kost Rapindo(putra)</option>
+        <option value="Kost Mawar,Jl. Siworatu,Gedong Meneng,Rajabasa,Kota Bandar Lampung">Kost Mawar(putri)</option>
+            <option value="Bumi Puspa Kencana III,Jalan Pramuka, Rajabasa,Kota Bandar Lampung,Lampung 35142">Kost Bumi Puspa Kencana(putri)</option>
+            <option value="Asrama Skala Bekhak, Gang Sawah Baru II, Kampung Baru, Bandar Lampung City, Lampung">Kost Sekala Bekhak(putri)</option>
+            <option value=" Kost "Fairus" Khusus Putri,Gg. Yahya No.27,Rajabasa,Kota Bandar Lampung, Lampung 35142">Kost Fairuz(putri)</option>
+            <option value="Villa Kerinci 2,Jl. Bumi Manti No.34,Kp. Baru,Kedaton,Kota Bandar Lampung, ">Kost Kerinci 2(putri)</option>
+            <option value="kost hapsari,Gg. Surya Kencana 1,Kampung Baru,Kedaton,Bandar Lampung">Kost Hapsari(putri)</option>
+            <option value="Naylah Guest House,Langkapura,Bandar Lampung,Bandar Lampung ">Naylah Guest House(putri)</option>
+            <option value="Graha Minda,Jl. Pramuka,Rajabasa,Kota Bandar Lampung, Lampung 35151">Kost Graha Minda(putri)</option>
+            <option value="Wisma Kirana II,Jl. Pelita 2 No.13,Labuhan Ratu,Kedaton,Kota Bandar Lampung">Kost Wisma Kirana II(putri)</option>
+            <option value="Kost Aisyah,Way Halim Permai,Way Halim,Kota Bandar Lampung">Kost Aisyah(putri)</option>
+            <option value="Pondok Hijau Kramat,Jalan Gang Beringin, No 07,Labuhan Ratu,Kedaton,Bandar Lampung">Pondok Hijau Kramat(putri)</option>
+            <option value="Kost Pelita 1,Jl. Pelita I,Labuhan Ratu,Kedaton,Bandar Lampung">Kost Pelita 1(putri)</option>
+            <option value="Kost Hidayah,Unnamed Road,Labuhan Ratu,Kedaton,Kota Bandar Lampung">Kost Hidayah(putri)</option>
+            <option value="Kost Putri M2M,Jl. Zainal Abidin Pagar Alam No.26,Labuhan Ratu,Kedaton,Bandar Lampung">Kost Putri M2M(putri)</option>
+        
+      </select>
+      <br>
+      <strong>Tujuan:</strong>
+      <select id="end">
+            <option value="Jl. Prof. Dr. Ir. Sumantri Brojonegoro No.1,Gedong Meneng,Rajabasa,Bandar Lampung">Universitas Lampung</option>
+            <option value="Jl. Bumi Manti IV No.15 ,Kp. Baru Kedaton,Bandar Lampung">Wisma Rahmayani</option>
+            <option value="Jl. Soekarno - Hatta No.8,Rajabasa Raya,Rajabasa,Bandar Lampung">Asrama Perwira(putra)</option>
+            <option value="Jl. Jauhari Wahid,Rajabasa,Bandar Lampung, Lampung 35141">Myqia House(putra)</option>
+            <option value="suropati golden green Jalan untung suropati,Labuhan Ratu,Kedaton,Bandar Lampung, Lampung 35141">Suropati Golden(putra)</option>
+            <option value="Jl. Pembina,Langkapura,Kota Bandar Lampung, Lampung 35151">Kost Raisya(putra)</option>
+            <option value="Jl. Pembina,Langkapura,Kota Bandar Lampung, Lampung 35151">Kost Rajabasa Indah(putra)</option>
+            <option value="GRIYA EISKA,Perumahan Bukit Alam Permai,Klp. Tiga,Langkapura,Kota Bandar Lampung, ">Griya Eiska(putra)</option>
+            <option value="Jl. Pembina,Langkapura,Kota Bandar Lampung, Lampung 35151">Kost Ivana(putra)</option>
+            <option value="Jl. Pembina,Langkapura,Kota Bandar Lampung, Lampung 35151">Kost Iva(putra)</option>
+            <option value="Imanuel Kost,Jl Kopi 22-A,Gedong Meneng,Rajabasa,Kota Bandar Lampung, ">Kost Imanuel(putra)</option>
+            <option value="Cemara Kost,Gg. Cemara No.8-B,Labuhan Ratu,Kedaton,Kota Bandar Lampung">Kost Cemara(putra)</option>
+            <option value="Rapindo Kost,Jl. Soekardi Hamdani Jl. Palapa 5C No.23,Labuhan Ratu,Kedaton,Kota Bandar Lampung">Kost Rapindo(putra)</option>
+            <option value="Kost Mawar,Jl. Siworatu,Gedong Meneng,Rajabasa,Kota Bandar Lampung">Kost Mawar(putri)</option>
+            <option value="Bumi Puspa Kencana III,Jalan Pramuka, Rajabasa,Kota Bandar Lampung,Lampung 35142">Kost Bumi Puspa Kencana(putri)</option>
+            <option value="Asrama Skala Bekhak, Gang Sawah Baru II, Kampung Baru, Bandar Lampung City, Lampung">Kost Sekala Bekhak(putri)</option>
+            <option value=" Kost "Fairus" Khusus Putri,Gg. Yahya No.27,Rajabasa,Kota Bandar Lampung, Lampung 35142">Kost Fairuz(putri)</option>
+            <option value="Villa Kerinci 2,Jl. Bumi Manti No.34,Kp. Baru,Kedaton,Kota Bandar Lampung, ">Kost Kerinci 2(putri)</option>
+            <option value="kost hapsari,Gg. Surya Kencana 1,Kampung Baru,Kedaton,Bandar Lampung">Kost Hapsari(putri)</option>
+            <option value="Naylah Guest House,Langkapura,Bandar Lampung,Bandar Lampung ">Naylah Guest House(putri)</option>
+            <option value="Graha Minda,Jl. Pramuka,Rajabasa,Kota Bandar Lampung, Lampung 35151">Kost Graha Minda(putri)</option>
+            <option value="Wisma Kirana II,Jl. Pelita 2 No.13,Labuhan Ratu,Kedaton,Kota Bandar Lampung">Kost Wisma Kirana II(putri)</option>
+            <option value="Kost Aisyah,Way Halim Permai,Way Halim,Kota Bandar Lampung">Kost Aisyah(putri)</option>
+            <option value="Pondok Hijau Kramat,Jalan Gang Beringin, No 07,Labuhan Ratu,Kedaton,Bandar Lampung">Pondok Hijau Kramat(putri)</option>
+            <option value="Kost Pelita 1,Jl. Pelita I,Labuhan Ratu,Kedaton,Bandar Lampung">Kost Pelita 1(putri)</option>
+            <option value="Kost Hidayah,Unnamed Road,Labuhan Ratu,Kedaton,Kota Bandar Lampung">Kost Hidayah(putri)</option>
+            <option value="Kost Putri M2M,Jl. Zainal Abidin Pagar Alam No.26,Labuhan Ratu,Kedaton,Bandar Lampung">Kost Putri M2M(putri)</option>
+        </select>
+    </div>
+    <div id="floating-panell">
+            <b><font  color= "white">Mode Perjalanan</b></font>
+            <select id="mode">
+              <option value="DRIVING">Naik Mobil</option>
+              <option value="WALKING">Jalan Kaki</option>
+            </select>
+            </div>
+    <div id="right-panel"></div>
+    <div id="map"></div>
+    <div class="footer"> <center>Copyright &copy; 2018. All rights reserved. Designed and developed by Designed by Amelia Jasmine, Intan Dinasti, Dian Pitaloka</center></div>
+    <script>
+      function initMap() {
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        var directionsService = new google.maps.DirectionsService;
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: {lat:-5.375130, lng:105.253640}
+        });
+        directionsDisplay.setMap(map);
+        directionsDisplay.setPanel(document.getElementById('right-panel'));
+
+        
+
+        var control = document.getElementById('floating-panel');
+        control.style.display = 'block';
+        map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
+
+        var onChangeHandler = function() {
+          calculateAndDisplayRoute(directionsService, directionsDisplay);
+        };
+        calculateAndDisplayRoute(directionsService, directionsDisplay);
+        document.getElementById('mode').addEventListener('change', function() {
+          calculateAndDisplayRoute(directionsService, directionsDisplay);
+        });
+        document.getElementById('start').addEventListener('change', onChangeHandler);
+        document.getElementById('end').addEventListener('change', onChangeHandler);
+      }
+
+      function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+        var start = document.getElementById('start').value;
+        var end = document.getElementById('end').value;
+        var selectedMode = document.getElementById('mode').value;
+        directionsService.route({
+          origin: start,
+          destination: end,
+          travelMode: google.maps.TravelMode[selectedMode]
+        }, function(response, status) {
+          if (status === 'OK') {
+            directionsDisplay.setDirections(response);
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAICvEJEVcEqp6JxtFoP8YsvaCZ5lRjl-s&callback=initMap&language=in&region=ID"></script>
+  </body>
+</html>
