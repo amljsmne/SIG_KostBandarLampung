@@ -1,0 +1,66 @@
+<html>
+<link rel="stylesheet" type="text/css" href="menu.css"></link>
+<head>
+<title>SIG Kost Bandar Lampung</title>
+</head>
+
+</head>
+<body><div class="header">
+        <div class="header">
+            <div class= "sidebar">
+            <a class="active" href="SIG_KostBandarLampung.html">BERANDA</a>
+            <div class="s1">
+            <button class="btn1">PILIHAN KOST</button>
+            <div class="sidebar3">
+            <a href="kosputra.html" target='blank'>KOST PUTRA</a>
+            <a href="kosputri.html" target='blank' >KOST PUTRI</a>
+        </div></div>
+            <div class="s2">
+            <button class="btn2">POLYGON</button>
+            <div class="sidebar4">
+                <a href="polygonjson.html" target='blank' >KOST SEKITAR UNILA</a>
+                <a href="polygonjson2.html" target='blank' >KOST SEKITAR MALAHAYATI</a>
+                <a href="polygonjson3.html" target='blank' >KOST SEKITAR TEKNOKRAT</a>
+                </div></div>
+            <div class="s3">
+                <button class="btn3">RENTANG HARGA KOST</button>
+                <div class="sidebar5">
+                <a href="3-5.html" target='blank' >3 - 5 JUTA</a>
+                <a href="6-8.html" target='blank' >6 - 8 JUTA</a>
+                <a href="9.html" target='blank' > >9  JUTA</a>
+                </div></div>
+                <div class="s4">
+                        <button class="btn4">OVERLAYS</button>
+                        <div class="sidebar6">
+                        <a href="overlaymawar.html" target='blank' >OVERLAYS KOST MAWAR (PUTRI)</a>
+                        <a href="overlaybumi.html" target='blank' >OVERLAYS KOST TAPIS (PUTRI)</a>
+                        <a href="overlaykerinci.html" target='blank' >OVERLAYS KOST KERINCI (PUTRI)</a>
+                        <a href="overlayminda.html" target='blank' >OVERLAYS GRAHA MINDA (PUTRI)</a>
+                        <a href="overlayanggraini.html" target='blank' >OVERLAYS KOST ANGGRAINI (PUTRI)</a>
+                        <a href="overlayrahmayani.html" target='blank' >OVERLAYS WISMA RAHMAYANI (PUTRA)</a>
+                        <a href="overlayperiwra.html" target='blank' >OVERLAYS ASRAMA PERWIRA (PUTRA)</a>
+                        <a href="overlayrajabasa.html" target='blank' >OVERLAYS KOST RAJABASA INDAH (PUTRA)</a>
+                        <a href="overlayimanuel.html" target='blank' >OVERLAYS KOST IMANUEL (PUTRA)</a>
+                        <a href="overlaycemara.html" target='blank' >OVERLAYS KOST CEMARA(PUTRA)</a>
+                        </div></div>
+                <a class="active" href="direction.html">PETUNJUK LOKASI</a>
+                <a class="active" href="kontak.html">KONTAK</a>
+                <a class="active" href="help.html">BANTUAN</a>
+                <a class="active" href="tentang.html">TENTANG</a>
+                <a class="active" href="login.php">KELUAR</a>
+             </div></div>
+    </div></div>
+    <center>
+
+<h2>Tentang SI-KOS</h2>
+
+<div class="card">
+  <img src="sikos.png" alt="Avatar" style="width:80%">
+  <div class="container">
+    <h4><b>Sistem Informasi Geografis ini berisi informasi mengenai kost-kostan yang ada disekitar beberapa Universitas yang ada di Bandar Lampung.Dengan adanya sistem informasi kost-kostan ini diharapkan dapat mempermudah pendatang khususnya mahasiswa baru dalam menemukan kost-kostan yang tepat.</b></h4> 
+  </div>
+</div>
+</center>
+</body>
+<div class="footerr"> <center> Copyright &copy; 2018. All rights reserved. Designed and developed by Designed by Amelia Jasmine, Intan Dinasti, Dian Pitaloka</center></div>
+</html> 
